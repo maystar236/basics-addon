@@ -5,7 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {                
+        --s: 80px; /* control the size*/
+        --c1: #b09f79;
+        --c2: #5e4875;        
+        --_g: #0000 83%,var(--c1) 85% 99%,#0000 101%;
+        background:
+            radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+            radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+            radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+            radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+            var(--c2);
+            background-size: calc(2*var(--s)) calc(2*var(--s));
+        background-repeat: repeat;
+    }
+    img {
+        width: 300px;
+    }
+    .image-gallery {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+    h1 {
+        text-align: center;
+        background-color: #b09f79;
+    }
+
+</style>
 <body>
-    Hello world
+    <h1>Hello world</h1>
+    <div class="image-gallery">
+    <img src="https://s7ap1.scene7.com/is/image/destqueensland/teq/consumer/global/images/destinations/gold-coast/blog-images/2021_GC_SpringbrookNationalPark_WarrieCircuit_NaturalLandscapes_ReubenNutt_143540.jpg?fit=wrap&fmt=webp&qlt=75&wid=1200" alt="">
+
+    <img src="https://s7ap1.scene7.com/is/image/destqueensland/teq/consumer/global/images/destinations/gold-coast/blog-images/2021_GC_SpringbrookNationalPark_WarrieCircuit_NaturalLandscapes_ReubenNutt_143540.jpg?fit=wrap&fmt=webp&qlt=75&wid=1200"
+    alt="">
+
+    <img src="https://s7ap1.scene7.com/is/image/destqueensland/teq/consumer/global/images/destinations/gold-coast/blog-images/2021_GC_SpringbrookNationalPark_WarrieCircuit_NaturalLandscapes_ReubenNutt_143540.jpg?fit=wrap&fmt=webp&qlt=75&wid=1200"
+        alt="">
+    </div>
+
 </body>
 </html>
