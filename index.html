@@ -12,6 +12,7 @@
 
     h1 {
         text-align: center;
+        background-color: #378A26;
         color: white;
         font-size: 50px;
         font-family: "Arial Black", Gadget, sans-serif;
@@ -27,7 +28,7 @@
         letter-spacing: -1px;
         word-spacing: -2.6px;
         text-transform: uppercase;
-        background-color: #378A26;
+        background-color: white;
     }
 
     h3{
@@ -38,6 +39,10 @@
         letter-spacing: -1px;
         word-spacing: -2.6px;
         text-transform: uppercase;
+    }
+
+    .highlight-text {
+        color: white;
     }
 
     button {
@@ -52,9 +57,11 @@
     }
 
     button:hover {
-        background: black;
+        background: #378A26;
+        border-color: black;
         color: white;
         cursor: pointer;
+        transition: all 150ms ease-in-out;
     }
 
     footer {
@@ -88,7 +95,7 @@
         background-color: #378A26;
         border-radius: 6px;
         font-size: 14px;
-        padding: 5px 6px;
+        padding: 8px 12px;
         transition: all 150ms ease-in-out;
         font-family: Arial, Helvetica, sans-serif;
         letter-spacing: -1px;
@@ -97,9 +104,10 @@
     }
 
     .theme-button:hover {
-        background: #290B11;
-        color: white;
+        background: white;
+        color: black;
         cursor: pointer;
+        transition: 150ms ease-in-out;
     }
 
     img {
@@ -110,8 +118,6 @@
     .main-image:hover {
         -webkit-mask-image: linear-gradient(black, transparent);
         mask-image: linear-gradient(black, transparent);
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;  
     }
 
     .grid {
@@ -126,18 +132,57 @@
         width: 100%;
     }
 
+    .grid img:hover {
+        transform: scale(1.1);
+        transition: 300ms ease-in-out;
+    }
+
+    .dark {
+        background-color: #378A26;
+    }
+
+    .dark .container {
+        background-color: black;
+        color: white;
+    }
+
+    .dark .heading1 {
+        background-color: white;
+        color: black;
+    }
+
+    .dark .heading2 {
+        color: white;
+        background-color: black;
+    }
+
+    .dark .heading3 {
+        color: white;
+    }
+
+    .dark .theme-button {
+        background-color: black;
+    }
+
+    .dark .theme-button:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+        transition: 150ms ease-in-out;
+    }
+
 </style>
 <body>
-    <button class="theme-button">Light Theme</button>
-    <h1>The Kawasaki Ninja 400</h1>
-    <h2>Unleash the Fun! </h2>
+    <button class="theme-button">Change Theme</button>
+    <h1 class="heading1">The Kawasaki Ninja 400</h1>
+    <h2 class="heading2">Unleash the Fun! </h2>
  
 <div class="container">
     <img src="https://i.ibb.co/mX1f9SH/5452055a-3519-4b2d-82ac-314a0f721d84.jpg" alt="Side image of Ninja 400"
     class="main-image">
     
-    <h3>
-        Why the Kawasaki Ninja 400 is Perfect for New Riders
+    <h3 class="heading3">
+        Why the <span class="highlight-text">Kawasaki Ninja 400</span> is Perfect for New Riders
     </h3>
     
     <p>
@@ -161,7 +206,7 @@
         alt="KAWASAKI-Ninja-400-KRT-Edition Front image">
    </div>
  
-    
+    <br>
     <button>Learn more</button>
     </div>
     <br>
@@ -169,5 +214,16 @@
         Coded by Kirsty Halkett ❤️
     </footer>
     
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+
+            body.classList.toggle("dark");
+        }
+
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+
+    </script>
 </body>
 </html>
