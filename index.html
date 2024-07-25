@@ -3,47 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ninja 400</title>
 </head>
 <style>
-    body {                
-        --s: 80px; /* control the size*/
-        --c1: #b09f79;
-        --c2: #5e4875;        
-        --_g: #0000 83%,var(--c1) 85% 99%,#0000 101%;
-        background:
-            radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
-            radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
-            radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
-            radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
-            var(--c2);
-            background-size: calc(2*var(--s)) calc(2*var(--s));
-        background-repeat: repeat;
-    }
-    img {
-        width: 300px;
-    }
-    .image-gallery {
-        display: grid;
-        grid-template-columns: 300px 300px 300px;
+    body {
+        background-color: black;
     }
     h1 {
         text-align: center;
-        background-color: #b09f79;
+        color: #378A26;
+        font-size: 50px;
+    }
+    h2{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+
+    h3{
+        text-align: center;
+        color: white;
+        font-size: 25px;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        border-color: #378A26;
+        background-color: white;
+        border-radius: 6px;
+        font-size: 20px;
+        padding: 8px 12px;
+        transition: all 150ms ease-in-out;
+    }
+
+    button:hover {
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    footer {
+        text-align: center;
+        margin: 0 auto;
+        color: white;
+        font-size: 18px;
+    }
+    .container {
+        margin: 20px auto;
+        max-width: 100%;
+        background-color: #378A26;
+        padding: 50px;
+        border-radius: 10px;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .theme-button {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        border-color: black;
+        background-color: #378A26;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 5px 6px;
+        transition: all 150ms ease-in-out;
+    }
+
+    .theme-button:hover {
+        background: #290B11;
+        color: white;
+        cursor: pointer;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .main-image:hover {
+        transform: scale(1.2);
     }
 
 </style>
 <body>
-    <h1>Hello world</h1>
-    <div class="image-gallery">
-    <img src="https://s7ap1.scene7.com/is/image/destqueensland/teq/consumer/global/images/destinations/gold-coast/blog-images/2021_GC_SpringbrookNationalPark_WarrieCircuit_NaturalLandscapes_ReubenNutt_143540.jpg?fit=wrap&fmt=webp&qlt=75&wid=1200" alt="">
+    <button class="theme-button">Dark Theme</button>
+    <h1>The Kawasaki Ninja 400</h1>
+    <h2>Unleash the Fun: </h2>
+    <h3>Why the Kawasaki Ninja 400 is Perfect for New Riders</h3>
+<div class="container">
+    <img src="https://i.ibb.co/mX1f9SH/5452055a-3519-4b2d-82ac-314a0f721d84.jpg" alt="Side image of Ninja 400"
+    class="main-image">
 
-    <img src="https://s7ap1.scene7.com/is/image/destqueensland/teq/consumer/global/images/destinations/gold-coast/blog-images/2021_GC_SpringbrookNationalPark_WarrieCircuit_NaturalLandscapes_ReubenNutt_143540.jpg?fit=wrap&fmt=webp&qlt=75&wid=1200"
-    alt="">
+    <p>
+        The Kawasaki Ninja 400 is an absolute blast on two wheels, perfect for those who crave   excitement and speed. With its punchy parallel-twin engine, it rockets off the line and slices through corners like a pro. Its striking Kawasaki Racing Team livery turns heads, making you look as fast as you feel.
+    </p>
+    <p>
+        Ideal for new riders, this beast is lightweight and easy to handle, giving you confidence and control from day one. The smooth power delivery and forgiving nature mean you can focus on enjoying the ride without getting overwhelmed.
+    </p>
+    <p> 
+        With advanced ABS for extra safety, the Ninja 400 is the perfect partner for your journey into the exhilarating world of motorcycling.
+    </p>
 
-    <img src="https://s7ap1.scene7.com/is/image/destqueensland/teq/consumer/global/images/destinations/gold-coast/blog-images/2021_GC_SpringbrookNationalPark_WarrieCircuit_NaturalLandscapes_ReubenNutt_143540.jpg?fit=wrap&fmt=webp&qlt=75&wid=1200"
-        alt="">
+    <img src="https://i.ibb.co/DWtyMy6/maxresdefault-1.jpg" alt="maxresdefault-1">
+    <img src="https://i.ibb.co/SNVYspK/ninja400-mgp-exhaust-1.jpg" alt="ninja400-mgp-exhaust-1">
+    <img src="https://i.ibb.co/nDKJj5W/KAWASAKI-Ninja-400-KRT-Edition-14504-23-1.jpg"
+    alt="KAWASAKI-Ninja-400-KRT-Edition Front image">
+    <img src="https://i.ibb.co/qyFsw1K/LVFS14239-S-1.jpg" alt="LVFS14239-S-1">
+
+ 
+
+    <button>Learn more</button>
     </div>
-
+    <br>
+    <footer>
+        Coded by Kirsty Halkett ❤️
+    </footer>
+    
 </body>
 </html>
