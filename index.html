@@ -9,21 +9,35 @@
     body {
         background-color: black;
     }
+
     h1 {
         text-align: center;
-        color: #378A26;
+        color: white;
         font-size: 50px;
+        font-family: "Arial Black", Gadget, sans-serif;
+        letter-spacing: -1px;
+        word-spacing: -2.6px;
+        text-transform: uppercase;
     }
     h2{
         text-align: center;
-        color: white;
-        font-size: 30px;
+        color: black;
+        font-size: 35px;
+        font-family: "Arial Black", Gadget, sans-serif;
+        letter-spacing: -1px;
+        word-spacing: -2.6px;
+        text-transform: uppercase;
+        background-color: #378A26;
     }
 
     h3{
         text-align: center;
-        color: white;
+        color: black;
         font-size: 25px;
+        font-family: "Arial Black", Gadget, sans-serif;
+        letter-spacing: -1px;
+        word-spacing: -2.6px;
+        text-transform: uppercase;
     }
 
     button {
@@ -48,20 +62,27 @@
         margin: 0 auto;
         color: white;
         font-size: 18px;
+        font-family: "Arial Black", Gadget, sans-serif;
+        letter-spacing: -1px;
+        word-spacing: -2.6px;
     }
     .container {
-        margin: 20px auto;
-        max-width: 100%;
+        margin: 50px 50px;
+        max-width: 1000px;
         background-color: #378A26;
-        padding: 50px;
+        padding: 30px;
         border-radius: 10px;
         text-align: left;
         font-size: 20px;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -1px;
+        word-spacing: -0.6px;   
     }
 
     .theme-button {
-        display: block;
-        margin: 0 auto;
+        display: inline-block;
+        margin: 0 5px;
         color: white;
         border-color: black;
         background-color: #378A26;
@@ -69,6 +90,10 @@
         font-size: 14px;
         padding: 5px 6px;
         transition: all 150ms ease-in-out;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -1px;
+        word-spacing: -0.6px;  
+    
     }
 
     .theme-button:hover {
@@ -83,19 +108,38 @@
     }
 
     .main-image:hover {
-        transform: scale(1.2);
+        -webkit-mask-image: linear-gradient(black, transparent);
+        mask-image: linear-gradient(black, transparent);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;  
+    }
+
+    .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        
+    }
+
+    .grid img {
+        width: 100%;
     }
 
 </style>
 <body>
-    <button class="theme-button">Dark Theme</button>
+    <button class="theme-button">Light Theme</button>
     <h1>The Kawasaki Ninja 400</h1>
-    <h2>Unleash the Fun: </h2>
-    <h3>Why the Kawasaki Ninja 400 is Perfect for New Riders</h3>
+    <h2>Unleash the Fun! </h2>
+ 
 <div class="container">
     <img src="https://i.ibb.co/mX1f9SH/5452055a-3519-4b2d-82ac-314a0f721d84.jpg" alt="Side image of Ninja 400"
     class="main-image">
-
+    
+    <h3>
+        Why the Kawasaki Ninja 400 is Perfect for New Riders
+    </h3>
+    
     <p>
         The Kawasaki Ninja 400 is an absolute blast on two wheels, perfect for those who crave   excitement and speed. With its punchy parallel-twin engine, it rockets off the line and slices through corners like a pro. Its striking Kawasaki Racing Team livery turns heads, making you look as fast as you feel.
     </p>
@@ -106,14 +150,18 @@
         With advanced ABS for extra safety, the Ninja 400 is the perfect partner for your journey into the exhilarating world of motorcycling.
     </p>
 
-    <img src="https://i.ibb.co/DWtyMy6/maxresdefault-1.jpg" alt="maxresdefault-1">
-    <img src="https://i.ibb.co/SNVYspK/ninja400-mgp-exhaust-1.jpg" alt="ninja400-mgp-exhaust-1">
-    <img src="https://i.ibb.co/nDKJj5W/KAWASAKI-Ninja-400-KRT-Edition-14504-23-1.jpg"
-    alt="KAWASAKI-Ninja-400-KRT-Edition Front image">
-    <img src="https://i.ibb.co/qyFsw1K/LVFS14239-S-1.jpg" alt="LVFS14239-S-1">
+    <div class="grid">
+        <img src="https://i.ibb.co/DWtyMy6/maxresdefault-1.jpg" alt="maxresdefault-1">
 
+        <img src="https://i.ibb.co/SNVYspK/ninja400-mgp-exhaust-1.jpg"              alt="ninja400-mgp-exhaust-1">
+
+        <img src="https://i.ibb.co/qyFsw1K/LVFS14239-S-1.jpg" alt="LVFS14239-S-1">
+
+        <img src="https://i.ibb.co/nDKJj5W/KAWASAKI-Ninja-400-KRT-Edition-14504-23-1.jpg"
+        alt="KAWASAKI-Ninja-400-KRT-Edition Front image">
+   </div>
  
-
+    
     <button>Learn more</button>
     </div>
     <br>
